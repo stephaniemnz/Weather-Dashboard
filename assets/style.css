@@ -23,9 +23,10 @@ body {
   }
   
   .container {
-    text-align: center;
+    text-align: left;
     align-items: row;
     flex-direction: row;
+    float: left
   }
   
   .weather-container {
@@ -35,6 +36,7 @@ body {
     border-radius: 5px;
     background-color: #fff;
     flex-direction: row;
+    float: right;
   }
   .inline-block {
     display: inline-block;
@@ -47,13 +49,24 @@ body {
     overflow-x: auto;
     margin-top: 20px;
     justify-content: center;
-    border: 1px solid rgb(49, 49, 49);  
+    border: 1px solid rgb(49, 49, 49); 
+    border-radius: 5px;
+    width: 75%;
+    justify-items: auto;
+    display: table-column;
+
+  .inline-block {
+    display: inline-block;
+    position: relative;
+    } 
 }
 .forecast-container {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
         justify-content: center;
+        border: 1px solid rgb(49, 49, 49);
+        width: 75%;
       }
       .weather-icon {
         width: 50px;
@@ -66,7 +79,7 @@ body {
         border: 1px solid #ccc;
         border-radius: 5px;
         background: rgb(49, 49, 49);
-        width: 200px;
+        width: 150px;
         color: #fff;
       }
       ul {
